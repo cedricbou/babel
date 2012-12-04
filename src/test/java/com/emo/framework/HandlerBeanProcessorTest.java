@@ -9,8 +9,6 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.emo.sample.commands.ClientIsMoving;
-import com.emo.sample.handlers.client.ClientIsMovingHandler;
 import com.emo.skeleton.framework.HandlerManager;
 
 public class HandlerBeanProcessorTest {
@@ -21,7 +19,7 @@ public class HandlerBeanProcessorTest {
 	public void checkHandlerProcessed() {
 		final List<String> names = Arrays.asList(context.getBeanDefinitionNames());
 				
-		assertTrue("command handler have been added to context", names.contains("clientIsMovingHandler"));
+		assertTrue("command handler have been added to context", names.contains("placeboHandler"));
 		
 		final HandlerManager manager = (HandlerManager)context.getBean("handlerManager");
 		
