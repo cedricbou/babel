@@ -19,4 +19,9 @@ public class FeatureCode {
 	public int hashCode() {
 		return code.hashCode();
 	}
+	
+	@Override
+	public String toString() {
+		return code;
+	}
 }

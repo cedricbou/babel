@@ -23,7 +23,7 @@ public class Instance {
 		this.validation = validation;
 	}
 	
-	public void featuring(final FeatureCode code) {
+	public void featuring(final FeatureCode code, final String config) {
 		assertModifiableState();
 		
 		// TODO : add feature
